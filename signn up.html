@@ -1,0 +1,118 @@
+<html>
+<title>registration form</title>
+<head>
+
+<script src="validation.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<style>
+body{ background : #59b3d5 ; 
+font-family: Calibri ;
+color: white; }
+
+h1{ text-align: center; background: #4c9bb9; border-radius: 50px; }
+
+
+			#iput input[name]
+			{   height: 25px;
+				width: 200px;
+				border-radius: 5px;
+				border:none;
+				margin:5px;
+				font
+			}
+			
+		
+		
+		#iput {
+			background: #4c9bb9; 
+			border-radius: 10px;
+			text-align: center;
+			height: 500px;
+			width :400px;
+			position: relative;
+			left: 35%
+			
+		}
+		
+		
+		
+		
+		.button{ 
+			margin: 10px;
+			border:none;
+			padding: 10px 25px;
+			text-align: center;
+			font-family : calibri ;
+			display: inline-block;
+			font-size: 16px;
+		}
+
+</style>
+
+<body >
+
+
+ 	 	
+<div id='cssmenu'>
+<ul>
+  <li><a href='index.php'><span>Home</span></a></li>
+   <li><a href='login.htm'><span>Login</span></a></li>
+   <li><a href='#'><span>Sign Up</span></a></li>
+   <li class='last'><a href='conatct.html'><span>Contact</span></a></li>
+</ul>
+</div>
+
+
+
+
+<div id="iput">
+<h1>REGISTRATION FORM</h1>
+<form name='registration' method="post" action="operation.php?val=sig"onSubmit="return formValidation();">
+
+<font face="Arial, Helvetica, sans-serif" >
+
+
+
+<input type="text" name="username" placeholder=" Enter the Username" size="50"/>
+<br>
+
+<input type="password" name="passid" placeholder=" Enter the Password"size="12" />
+
+<br><br>
+
+<textarea name="address"  rows="5" cols="25" placeholder=" Input your address"></textarea> 
+<br><br>
+
+<select name="country" width="10">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select>
+<br>
+
+<br>
+<input type="text" name="zip"  placeholder=" ZIP Code"/>
+<br>
+
+
+<input type="text" name="email" size="50"  placeholder=" Enter E-mail"/>
+<br>
+
+
+<input type="radio" name="gen" value="Male" /><span>Male</span></br>
+<input type="radio" name="gen" value="Female" /><span>Female</span></br>
+<!--<tr><td>upload image:</td><td><input type="file" name="img" value="image"> </td></tr>-->
+<br><br>
+<input type="submit" name="submit" value="Submit" />
+</form>
+
+</div>
+
+</body>
+</html>
